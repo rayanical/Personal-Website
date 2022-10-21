@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/favicon1.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Locations | Harrows</title>
+    </head>
+    <body>
+        <nav>
+            <img id="harrowsLogo" src="images/harrows.png" alt="" />
+            <li>
+                <ul>
+                    <a class="hover-underline-animation" href="index.html">HOME</a>
+                </ul>
+                <ul>
+                    <a class="hover-underline-animation" href="menu.html">MENU</a>
+                </ul>
+                <ul>
+                    <a class="hover-underline-animation" href="locations.html">LOCATIONS</a>
+                </ul>
+                <ul>
+                    <div class="dropdown">
+                        <button onclick="window.location.href='about.html'" class="dropbtn hover-underline-animation">
+                            ABOUT US
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="history.html">History</a>
+                            <a href="faq.html">FAQ</a>
+                            <a href="nutrition.html">Nutrition</a>
+                            <a href="pictures.html">Picture Gallery</a>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <a class="hover-underline-animation" href="contact.html">CONTACT</a>
+                </ul>
+            </li>
+        </nav>
+        <div id="vis" class="topnav">
+            <a href="index.html" class="active"><img id="mobileLogo" src="images\harrows.png" alt="" /></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="menu.html">Menu</a>
+                <a href="locations.html">Locations</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="pictures.html">Picture Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <section id="main3">
+            <li id="locationList">
+                <div class="div3">
+                    <ul class="locator">
+                        <h1 class="locationText">Reading</h1>
+                        <div class="div4"><a class="call" href="tel:7819440721">Call Now ☏</a> <a target="_blank" class="call" href="">Currently Unavailable</a></div>
+                    </ul>
+                    <ul class="locator">
+                        <h1 class="locationText">Medford</h1>
+                        <div class="div4">
+                            <a class="call" href="tel:7813060410">Call Now ☏</a>
+                            <a target="_blank" class="call" href="https://www.youradminportal.com/FoodDelivery2/order.php?ol=16133">Order for Pickup</a>
+                        </div>
+                    </ul>
+                    <ul class="locator">
+                        <h1 class="locationText">Saugus</h1>
+                        <div class="div4">
+                            <a class="call" href="tel:7812317410">Call Now ☏</a>
+                            <a target="_blank" class="call" href="https://www.youradminportal.com/FoodDelivery2/order.php?ol=16134">Order for Pickup</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="div3">
+                    <ul class="locator">
+                        <h1 class="locationText">Tewksbury</h1>
+                        <div class="div4">
+                            <a class="call" href="tel:9788580411">Call Now ☏</a>
+                            <a target="_blank" class="call" href="https://www.youradminportal.com/FoodDelivery2/order.php?ol=16135">Order for Pickup</a>
+                        </div>
+                    </ul>
+                    <ul class="locator">
+                        <h1 class="locationText">Dedham</h1>
+                        <div class="div4">
+                            <a class="call" href="tel:7813200411">Call Now ☏</a>
+                            <a target="_blank" class="call" href="https://www.youradminportal.com/FoodDelivery2/order.php?ol=16136">Order for Pickup</a>
+                        </div>
+                    </ul>
+                    <ul class="locator">
+                        <h1 class="locationText">Methuen</h1>
+                        <div class="div4">
+                            <a class="call" href="tel:9786860410">Call Now ☏</a>
+                            <a target="_blank" class="call" href="https://www.youradminportal.com/FoodDelivery2/order.php?ol=16149">Order for Pickup</a>
+                        </div>
+                    </ul>
+                </div>
+            </li>
+            <div id="wrapper2">
+                <h1 id="mapTitle">All Locations Open 7 Days a Week <br />10AM-7PM</h1>
+                <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1CMU0tLgy46ORRFodUmPEoWOG0OunCpY&ehbc=2E312F" width="450" height="430"></iframe>
+            </div>
+        </section>
+    </body>
+    <script src="main.js"></script>
+</html>

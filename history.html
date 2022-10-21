@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/favicon1.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>History | Harrows</title>
+    </head>
+    <body>
+        <nav>
+            <img id="harrowsLogo" src="images/harrows.png" alt="" />
+            <li>
+                <ul>
+                    <a class="hover-underline-animation" href="index.html">HOME</a>
+                </ul>
+                <ul>
+                    <a class="hover-underline-animation" href="menu.html">MENU</a>
+                </ul>
+                <ul>
+                    <a class="hover-underline-animation" href="locations.html">LOCATIONS</a>
+                </ul>
+                <ul>
+                    <div class="dropdown">
+                        <button onclick="window.location.href='about.html'" class="dropbtn hover-underline-animation">
+                            ABOUT US
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="history.html">History</a>
+                            <a href="faq.html">FAQ</a>
+                            <a href="nutrition.html">Nutrition</a>
+                            <a href="pictures.html">Picture Gallery</a>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <a class="hover-underline-animation" href="contact.html">CONTACT</a>
+                </ul>
+            </li>
+        </nav>
+        <div id="vis" class="topnav">
+            <a href="index.html" class="active"><img id="mobileLogo" src="images\harrows.png" alt="" /></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="menu.html">Menu</a>
+                <a href="locations.html">Locations</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="pictures.html">Picture Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <section id="main4">
+            <h1 id="topText" class="historyText">
+                Since the 1930's chicken pie lovers from all over New England have been driving to Harrows<br />
+                in Reading, MA to fill their comfort food cravings. . . Harrows Chicken Pie. Charles<br />
+                and Winifred Harrow started the business over 70 years ago when Route 28 in Reading <br />was sparsely populated farmland. Over the years, Harrows has seen many
+                changes. Harrows was part of the Reading community<br />
+                before Route 128 and Route 93 were even around. Nowadays, Reading is a bustling residential community that still loves their chicken pie.
+            </h1>
+            <img src="images\f7175b_7c319518d9dd4d42808bbe3fd.jpg" alt="" id="historyPic" />
+            <h1 id="readingPic">Harrow's Reading Location</h1>
+
+            <h1 id="bottomText" class="historyText">
+                Walter Arsenault started working for the Charlie Harrow back when he was a kid in the 1940s. He eventually purchased the business in the 1950's. Walter and his wife,
+                Shirley, ran the business with a little help from the family. . .their 7 children. While different family members have come and gone, Dan and Wally Arsenault remain in
+                the chicken pie making business. They both began working at Harrows as young children, and eventually purchased the company from their father in 1995. They both
+                continue to work in the Reading location today.
+            </h1>
+            <h1 id="afterText1" class="historyText">
+                Harrows continues to provide New England with the best quality pies, and has now expanded to 5 additional locations. All of the chicken pies are still made fresh daily
+                at our Reading location and delivered to our stores in Medford, Saugus, Tewksbury, Dedham, and Methuen.
+            </h1>
+            <h1 id="afterText2" class="historyText">For many of our Harrows customers, eating a Harrows Chicken Pie is like revisiting a fond childhood memory.</h1>
+        </section>
+    </body>
+    <script src="main.js"></script>
+</html>

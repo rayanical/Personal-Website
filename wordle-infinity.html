@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height user-scalable=no" />
+        <link rel="stylesheet" href="style_wordle.css" />
+        <link rel="icon" href="AcademicGlassHyena-small.gif" />
+        <title>Wordle Infinity - A Word Game</title>
+    </head>
+    <body>
+        <div id="split">
+            <nav>
+                <svg class="pointer btn" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path
+                        fill="#878a8c"
+                        d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"
+                    ></path>
+                </svg>
+                <h1 id="title">WORDLE∞</h1>
+                <div id="buttons">
+                    <svg id="statistics" class="pointer" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                        <path fill="#878a8c" d="M16,11V3H8v6H2v12h20V11H16z M10,5h4v14h-4V5z M4,11h4v8H4V11z M20,19h-4v-6h4V19z"></path>
+                    </svg>
+                </div>
+            </nav>
+            <h1 id="name">by rayan</h1>
+        </div>
+        <div id="splitter">
+            <section id="answers">
+                <div class="row" id="row1">
+                    <div class="tile tile1"></div>
+                    <div class="tile tile1"></div>
+                    <div class="tile tile1"></div>
+                    <div class="tile tile1"></div>
+                    <div class="tile tile1"></div>
+                </div>
+                <div class="row" id="row2">
+                    <div class="tile tile2"></div>
+                    <div class="tile tile2"></div>
+                    <div class="tile tile2"></div>
+                    <div class="tile tile2"></div>
+                    <div class="tile tile2"></div>
+                </div>
+                <div class="row" id="row3">
+                    <div class="tile tile3"></div>
+                    <div class="tile tile3"></div>
+                    <div class="tile tile3"></div>
+                    <div class="tile tile3"></div>
+                    <div class="tile tile3"></div>
+                </div>
+                <div class="row" id="row4">
+                    <div class="tile tile4"></div>
+                    <div class="tile tile4"></div>
+                    <div class="tile tile4"></div>
+                    <div class="tile tile4"></div>
+                    <div class="tile tile4"></div>
+                </div>
+                <div class="row" id="row5">
+                    <div class="tile tile5"></div>
+                    <div class="tile tile5"></div>
+                    <div class="tile tile5"></div>
+                    <div class="tile tile5"></div>
+                    <div class="tile tile5"></div>
+                </div>
+                <div class="row" id="row6">
+                    <div class="tile tile6"></div>
+                    <div class="tile tile6"></div>
+                    <div class="tile tile6"></div>
+                    <div class="tile tile6"></div>
+                    <div class="tile tile6"></div>
+                </div>
+            </section>
+            <section id="keyboard">
+                <div class="key_row" id="row_1">
+                    <button class="key keys">Q</button>
+                    <button class="key keys">W</button>
+                    <button class="key keys">E</button>
+                    <button class="key keys">R</button>
+                    <button class="key keys">T</button>
+                    <button class="key keys">Y</button>
+                    <button class="key keys">U</button>
+                    <button class="key keys">I</button>
+                    <button class="key keys">O</button>
+                    <button class="key keys">P</button>
+                </div>
+                <div class="key_row" id="row_2">
+                    <button class="key keys">A</button>
+                    <button class="key keys">S</button>
+                    <button class="key keys">D</button>
+                    <button class="key keys">F</button>
+                    <button class="key keys">G</button>
+                    <button class="key keys">H</button>
+                    <button class="key keys">J</button>
+                    <button class="key keys">K</button>
+                    <button class="key keys">L</button>
+                </div>
+                <div class="key_row" id="row_3">
+                    <button id="enter" class="key">ENTER</button>
+                    <button class="key keys">Z</button>
+                    <button class="key keys">X</button>
+                    <button class="key keys">C</button>
+                    <button class="key keys">V</button>
+                    <button class="key keys">B</button>
+                    <button class="key keys">N</button>
+                    <button class="key keys">M</button>
+                    <button id="delete" class="key">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path
+                                fill="#d7dadc"
+                                d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div id="alert" class="base"></div>
+
+        <div id="end" class="endOpacity">
+            <h1 id="restart_text">placeholder</h1>
+            <button id="restart">Restart</button>
+        </div>
+
+        <div id="stat">
+            <div class="rowMaker">
+                <h1>Games Played:</h1>
+                <h2 class="numberStat" id="gamesPlayed">gamesPlayed</h2>
+            </div>
+            <div class="rowMaker">
+                <h1>Total Wins:</h1>
+                <h2 class="numberStat" id="totalWins">totalWins</h2>
+            </div>
+            <div class="rowMaker">
+                <h1>Win Percentage:</h1>
+                <h2 class="numberStat" id="winPerc">win%</h2>
+            </div>
+            <div class="rowMaker">
+                <h1>First Try Wins:</h1>
+                <h2 class="numberStat" id="firstTry">WIP</h2>
+            </div>
+            <div class="rowMaker">
+                <h1>Second Try Wins:</h1>
+                <h2 class="numberStat" id="secondTry">WIP</h2>
+            </div>
+            <div class="rowMaker">
+                <h1>Third Try Wins:</h1>
+                <h2 class="numberStat" id="thirdTry">WIP</h2>
+            </div>
+            <div class="rowMaker">
+                <h1>Fourth Try Wins:</h1>
+                <h2 class="numberStat" id="fourthTry">WIP</h2>
+            </div>
+            <div class="rowMaker">
+                <h1>Fifth Try Wins:</h1>
+                <h2 class="numberStat" id="fifthTry">WIP</h2>
+            </div>
+            <div class="rowMaker">
+                <h1>Sixth Try Wins:</h1>
+                <h2 class="numberStat" id="sixthTry">WIP</h2>
+            </div>
+        </div>
+
+        <script type="module" src="js/wordle_main.js"></script>
+        <script type="module" src="js/guesses.js"></script>
+        <script type="module" src="js/answers.js"></script>
+    </body>
+</html>

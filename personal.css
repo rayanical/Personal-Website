@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+html {
+    background-color: black;
+    font-family: 'Comforter Brush', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-text {
+    color: white;
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+h1 {
+    margin: 0;
+}
+
+.nav-text:hover {
+    cursor: default;
+}
+
+#top-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-content: flex-start;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+#projects {
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    position: relative;
+    top: 270px;
+}
+
+#projects:hover {
+    cursor: default;
+}
+
+#remove {
+    background: none;
+    border: none;
+    visibility: none;
+}
+
+.btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    position: relative;
+    top: 300px;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#mail {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    transform: scale(0.6);
+    transition-property: transform;
+    transition-duration: 0.1s;
+}
+
+#mail:hover {
+    transform: scale(0.7);
+    cursor: pointer;
+}
