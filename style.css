@@ -551,6 +551,16 @@ a {
     width: 180px;
 }
 
+.contactStuff a,
+.contactStuff a:link,
+.contactStuff a:visited,
+.contactStuff a:hover,
+.contactStuff a:active,
+.contactStuff a:focus {
+    text-decoration: none;
+    color: black;
+}
+
 .gallery img {
     width: 130%;
     height: auto;
