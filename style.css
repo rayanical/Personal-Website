@@ -12,6 +12,16 @@ html {
     background-size: 110%;
 }
 
+section {
+    z-index: 1;
+    position: relative;
+}
+
+nav {
+    z-index: 2;
+    position: relative;
+}
+
 #vis {
     visibility: hidden;
 }
@@ -29,6 +39,7 @@ html {
 /* Style navigation menu links */
 .topnav a {
     color: black;
+    z-index: 2;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -100,7 +111,6 @@ nav {
     flex-direction: row;
     align-items: center;
     height: 5em;
-    z-index: 1;
 }
 
 li {
@@ -211,7 +221,6 @@ a {
 
 #order span {
     position: relative;
-    z-index: 2;
 }
 
 #order:after {
